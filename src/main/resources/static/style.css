@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #222;
+}
+
+header {
+    background: #1f3a5f;
+    color: white;
+    padding: 16px 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #eef2f7;
+}
+
+.full {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.closed {
+    color: #777;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #444;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 4px;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    background: #1f3a5f;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2c4f80;
+}
+
+button:disabled {
+    background: #9aa8bb;
+    cursor: not-allowed;
+}
+
+button.secondary {
+    background: #e3e8ef;
+    color: #1f3a5f;
+    margin-left: 8px;
+}
+
+button.secondary:hover {
+    background: #d3dae5;
+}
+
+#register-message {
+    margin: 14px 0 0;
+    font-size: 14px;
+}
+
+.msg-error {
+    color: #c0392b;
+}
+
+.msg-success {
+    color: #1e7e34;
+    font-weight: bold;
+}
+
+.ticket-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background: #1e7e34;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.ticket-link:hover {
+    background: #196a2c;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>College Event Management System</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Events</h2>
+        <div id="events-list">Loading...</div>
+    </section>
+
+    <section id="register-section" hidden>
+        <h2 id="register-title">Register</h2>
+
+        <div id="step-details">
+            <label>Name
+                <input id="reg-name" type="text" placeholder="Your full name">
+            </label>
+            <label>Email
+                <input id="reg-email" type="email" placeholder="name@college.edu">
+            </label>
+            <label>Department
+                <input id="reg-department" type="text" placeholder="For example, CSE">
+            </label>
+            <label>Mobile number
+                <input id="reg-mobile" type="tel" maxlength="10" placeholder="10-digit mobile number">
+            </label>
+            <button id="send-otp-btn">Send OTP</button>
+        </div>
+
+        <div id="step-otp" hidden>
+            <p id="otp-info"></p>
+            <label>Enter OTP
+                <input id="reg-otp" type="text" maxlength="6" inputmode="numeric" placeholder="6-digit OTP">
+            </label>
+            <button id="verify-btn">Verify and register</button>
+            <button id="back-btn" class="secondary">Change details or resend OTP</button>
+        </div>
+
+        <p id="register-message"></p>
+        <a id="ticket-link" class="ticket-link" href="#" hidden>Download ticket (PDF)</a>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
